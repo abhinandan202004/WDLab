@@ -1,0 +1,841 @@
+
+Web Design Lab Programs
+
+1.  Create a table to show your class time table
+<html>
+<head>TABLE TAG</head>
+<title>TABLE</title>
+<body>
+<style>
+table, th, td
+{
+border: 1px solid black;
+border-collapse:collapse;
+padding:15px;
+}
+#t01
+{
+background-color: #f1f1c1;
+}
+td{text-align:center;}
+</style>
+<table id="t01">
+<caption><b>AI&DS ONLINE TABLE</b></caption>
+<tr>
+<th colspan="4">AI&DS</th>
+</tr>
+<tr>
+<th colspan="4">Monday</th>
+</tr>
+<tr>
+<th>9:30-10:20</th>
+<th>10:30-11:20</th>
+<th>11:30-12:20</th>
+<th>12:30-1:20</th>
+</tr>
+<tr>
+<td>P&S</td>
+<td>DS</td>
+<td>PY</td>
+<td>NM</td>
+</tr>
+</table>
+<hr>
+<table id="t02">
+<caption><strong>CSE-2 ONLINE TABLE</strong></caption>
+<tr>
+<th rowspan="4">CSE-2</th>
+</tr>
+<tr>
+<th colspan="4">Monday</th>
+</tr>
+<tr>
+<th>9:30-10:20</th>
+<th>10:30-11:20</th>
+<th>11:30-12:20</th>
+<th>12:30-1:20</th>
+</tr>
+<tr>
+<td>PHY</td>
+<td style="background-color: #A52A2A;">DS</td>
+<td>P&S</td>
+<td>ENG</td>
+</tr>
+</table>
+</body>
+</html>
+2. Use tables to provide layout to your HTML page describing your college infrastructure. Procedure: 
+1.Go to start- >all programs-> accessories->notepad 
+2.Type the html code 
+3.Use tag to make table 
+4.Use tag to make table row 
+5.Use tag for inserting table data 
+6. Use bgcolor to heading tag to make background color to pink and Use colspan = "2" to make merge of 2 columns. 
+7. Valign=”top” to make table row data in the top 
+8.Go to file –>save –>save the file with html extension 
+9.Run the html file using browser. 
+
+Program: 
+
+<html>
+<head>
+ <title>AITS COLLEGE INFASTRUCTURE</title>
+ </head>
+ <body>
+ <table width = "100%" border = "0">
+ <tr>
+ <td colspan = "2" bgcolor = "pink">
+ <center><h1>UVCE COLLEGE INFASTRUCTURE</center></h1>
+ </td>
+ </tr>
+ <tr valign = "top">
+ <td bgcolor = "linen" width = "50">
+ <b>DEPARTMENTS</b><br><br>
+ 1.COMPUTER SCIENCE AND ENGINEERING<br>
+ 2.ELECTRONICS COMMUNICATION AND ENGINEERING<br>
+ 3.CIVIL ENGINEERING<br>
+ 4.MECHANICAL ENGINEERING <br>
+ 5.ELECRICAL ELECTRONICS AND ENGINEERING <br>
+ </td>
+ <td bgcolor = "lightblue" width = "100" height = "200">
+ LABS AND CLASSROOMS
+ </td>
+ </tr>
+ <tr>
+ <td colspan = "2" bgcolor = "#b5dcb3">
+ <center>
+ Department of CSE
+ </center>
+ </td>
+ </tr>
+ </table>
+ </body>
+</html>
+
+3. Use <span>and <div> tags to provide a layout to the above page instead of a table layout.
+Procedure:
+1. Go to start- >all programs-> accessories->notepad
+2. Type the html code
+3. <span> tag is an inline container used to mark up a part of a text, 
+4. we use <span> tag to change the color of the text in the particular position in the 
+program.
+5. <div> tag defines a division or a section in an HTML document.
+6. With the help of div tag we created class and call the style elements form the head with 
+.(dot) Specifier and class name 
+7. Add necessary styles in <style> tag that may reflected to class
+8. Go to file –>save –>save the file with html extension
+9. Run the html file using browser.
+Program:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.myDiv {
+ border: 5px outset red;
+ background-color: lightblue; 
+ text-align: center;
+}
+</style>
+</head>
+<body>
+<h1>The div element</h1>
+<div class="myDiv">
+ <h2>This is a heading in a div element</h2>
+ <p>This is some text in a div element.</p>
+</div>
+<p>My mother has <span style="color:blue;font-weight:bold">blue</span> eyes and my father has <span 
+style="color:darkolivegreen;font-weight:bold">dark green</span> eyes.</p>
+<p>This is some text outside the div element.</p>
+</body>
+</html>
+
+or
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>University Infrastructure</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: red;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: blue;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: black;
+            border: 1px solid yellow;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .heading {
+            font-size: 24px;
+            font-weight: bold;
+            color: green;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            font-size: 16px;
+            color: pink;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .image {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <span class="heading">Main Campus</span>
+            <div class="description">
+                The main campus of our university is situated in a beautiful location with state-of-the-art facilities.
+            </div>
+            <div class="image-container">
+                <img class="image" src="main-campus.jpg" alt="Main Campus">
+            </div>
+        </div>
+
+        <div class="section">
+            <span class="heading">Library</span>
+            <div class="description">
+                Our university library is well-equipped with a vast collection of books, journals, and digital resources.
+            </div>
+            <div class="image-container">
+                <img class="image" src="library.jpg" alt="Library">
+            </div>
+        </div>
+
+        <div class "section">
+            <span class="heading">Laboratories</span>
+            <div class="description">
+                We have modern laboratories for various disciplines, allowing students to engage in hands-on experiments.
+            </div>
+            <div class="image-container">
+                <img class="image" src="labs.jpg" alt="Laboratories">
+            </div>
+        </div>
+
+        <div class="section">
+            <span class="heading">Sports Facilities</span>
+            <div class="description">
+                The university offers a range of sports facilities including a gym, swimming pool, and outdoor sports fields.
+            </div>
+            <div class="image-container">
+                <img class="image" src="sports.jpg" alt="Sports Facilities">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+4. Use frames such that page is divided into 3 frames 20% on left to show contents of pages, 
+60% in center to show body of page, remaining on right to show remarks.
+
+Procedure: 
+1. Create an HTML file with name main-frame.html.
+2. Create Frames by using Frameset tag. 
+3. In Frameset tag create three frames for 1 columns and 2 rows. 
+4. In the left column frame load html file left-frame.html. 
+5. In the right column frame load html file right-top-frame.html for the Content.
+6. In the right column frame load html file right-bottom-frame.html for the remarks.
+7. Close the html file.
+
+Save file as main-frame.html
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>HTML Frames</title>
+ </head>
+ <frameset cols="20%,*"> 
+<frame src="left-frame.html"> 
+<frameset rows="60%,*"> 
+<frame src="right-top-frame.html"> 
+<frame src="right-bottom-frame.html"> 
+</frameset> 
+</frameset>
+</html>
+
+Save file as left-frame.html
+
+<!DOCTYPE html>
+<html> 
+ <head>
+ <title>HTML Frames</title>
+ </head>
+<body>
+<h1>CONTENTS</h1>
+<ul>
+<li>Chapter-1</li>
+<li>Chapter-2</li>
+<li>Chapter-3</li>
+<li>Chapter-4</li>
+<li>Chapter-5</li>
+<li>Chapter-6</li>
+<li>Chapter-7</li>
+<li>Chapter-8</li>
+<li>Chapter-9</li>
+</ul>
+</body>
+
+Save file as right-top-frame.html
+
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>HTML Frames</title>
+ </head>
+<h1>RIGHT TOP FRAME</h1>
+</html>
+</html>
+
+Save file as right-bottom-frame.html
+
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>HTML Frames</title>
+ </head>
+ <body>
+<h1>Bottom Frame</h1>
+2018 © UVCE. All rights reserved.
+powered by TargetOrate
+Privacy Policy Reach Us Terms & Conditions Refund Policy
+</body>
+</html>
+
+ 6. Develop static pages (using only HTML) of an online book store, the pages should resemble:
+www.amazon.com, the website should consist the following pages, home page, registration and 
+user login, user profile page, books catalog, shopping cart, payment by credit card, order 
+confirmation.
+Home page
+
+Main.html:
+<html>
+<head>
+<title>
+Amazon</title>
+</head>
+<body bgcolor="cyan"> <center>
+<strong><h1>Welcome to AMAZON</h1></strong>
+<form method="post" action="login.html" target=_blank >
+<h4>for books</h4><input type="submit" value="click here">
+</form>
+</center>
+</body>
+</html>
+
+
+Registration and user Login
+
+Login.html:
+<html>
+<head>
+<title>
+login</title>
+</head>
+<body bgcolor="cyan"> <center>
+<strong><h1> AMAZON </h1></strong></center>
+<right>
+<table align="right">
+<tr>
+<td><h4>user name</td>
+<td><input type="text" ></td>
+<td></td>
+</tr>
+<tr>
+<td><h4>password</td>
+<td><input type="password"></td>
+<td></td>
+</tr>
+<tr>
+<td>
+<form method="post" action="catalog.html" >
+<input type="submit" value="submit" >
+</form>
+</td>
+<td>
+<form method="post" action="reg.html" >
+<input type="submit" value="register" >
+&nbsp;&nbsp;
+<input type="reset" value="reset"></form></td>
+</tr>
+</table>
+</body>
+</html>
+
+Registration page
+
+reg.html:
+<html>
+<head>
+<title>
+login page</title>
+</head>
+<body bgcolor="cyan">
+<center><strong><h1> AMAZON </h1></strong></center>
+<form method="post" action="catalog.html" >
+<right>
+<table align="left">
+<tr>
+<td><h4>user name</td>
+<td><input type="text" ></td>
+<tr>
+<tr>
+<td><h4>password</td>
+<td><input type="password"></td>
+</tr>
+<tr>
+<td><h4>confirm password</td>
+<td><input type="password"></td>
+</tr>
+<tr>
+<td><h4>male &nbsp;&nbsp;
+<option >
+<input type="radio" name="sex" id="male"></td>
+<td><h4>female &nbsp; &nbsp;
+<input type="radio" name="sex" id="female" ></td>
+</option>
+</tr>
+<tr>
+<td>Address</td>
+<td><textarea name="address" rows=5 cols=19>
+</textarea>
+</td>
+<tr>
+<td>
+<input type="submit" value="submit" ></td>
+<td>
+<input type="reset" value="reset"></td>
+</tr>
+</form>
+</body>
+</html>
+
+Userprofile
+
+userprofile.html
+<html>
+<head>
+<title>
+userprofile</title>
+</head>
+<body bgcolor="cyan"> <center>
+<strong><h1>Welcome to AMAZON Online Book Store </h1></strong></center>
+Edit your profile here...
+<form method="post" action="catalog.html" >
+<right>
+<table align="left">
+<tr>
+<td><h4>Edit user name</td>
+<td><input type="text" ></td>
+<tr>
+<tr>
+<td><h4>Edit password</td>
+<td><input type="password"></td>
+</tr>
+<tr>
+<option >
+<td><h4>male &nbsp;&nbsp;
+<input type="radio" name="sex" id="male"></td>
+<td><h4>female &nbsp; &nbsp;
+<input type="radio" name="sex" id="female" ></td>
+</option>
+</tr>
+<tr>
+<td>Edit Address</td>
+<td><textarea name="address" rows=5 cols=19>
+</textarea>
+</td>
+<tr>
+<td>
+<input type="submit" value="submit" ></td>
+</tr>
+</form>
+</body>
+</html>
+
+
+Books catalog
+Catalog.html:
+<html>
+<head>
+<title>
+books catalog</title>
+</head>
+<body bgcolor="cyan">
+<center><h1>AMAZON</h1></center>
+<form method="post" action="shopping.html">
+<left>
+<table>
+<tr>
+<td><b><h3>frontend books</td>
+<td></td></tr>
+<tr>
+<td></td>
+<td><h4>C&Ds</td>
+</tr>
+<tr>
+<td></td>
+<td><h4>Ads</td>
+</tr>
+<tr>
+<td></td>
+<td><h4>JAVA
+</td></tr>
+<tr>
+<td><b><h3>backend books</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><h4>Oracle</td>
+</tr>
+<tr>
+<td></td>
+<td><h4>Ms SQL Server
+</td></tr>
+<tr>
+<td></td>
+<td><h4>MySql </td>
+</tr>
+</table>
+</h4>
+<center>
+<b>for buy one of these books
+<br>
+</b><input type="submit" value="click here">
+</center>
+</form>
+</body>
+</html>
+
+Shopping cart
+
+Shopping.html:
+<html>
+<head><title>shopping cart</title>
+</head>
+<body bgcolor="cyan">
+<center><h1>
+Shopping Cart</h1></center>
+<br><br><br><br><br>
+<table align="center">
+<tr>
+<td>Text Books</td>
+<td>
+<select >
+<optgroup label="select the book">
+<option value="C&Ds">C&Ds
+<option value="Ads">Ads
+<option value="Java">Java
+<option value="Oracle">Oracle
+<option value="Ms SQL Server">Ms SQL Server
+<option value="MySql">MySql
+</optgroup>
+</select>
+</td></tr>
+<tr>
+<td>
+Quantity</td>
+<td>
+<input type="text" id="q">
+</td></tr>
+<tr>
+<td></td>
+<td>
+<form method=post action="payment.html">
+<input type="submit" value=ok />
+</form>
+</td></tr>
+</table>
+<center>
+<pre>Cost of one book is"500" + shipping "100"</pre>
+</center>
+<body>
+</html>
+
+
+Payment by credit card
+
+Payment.html:
+<html>
+<head><title>payment</title></head>
+<body bgcolor="cyan">
+<center><h1>Payment By Credit Card</h1></center>
+<form method=post action="ordrconform.html">
+<br><br><br><br><br>
+<table align="center">
+<tr>
+<td>
+<h4>Total Amount</h4></td>
+<td><input type="text">
+</td>
+</tr>
+<tr>
+<td><h4>Credit Card Number</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>
+</td>
+<td><input type="submit" value=OK>
+</td>
+</tr>
+</table>
+</form></body>
+</html>
+
+
+Order Conformation
+
+Ordrconform:
+<html>
+<head><title>order conformation</title><M/head>
+<body bgcolor="cyan">
+<center>
+<h1><b>BOOK SHOPPING</h1>
+<pre><strong>
+<b>Your order Is Conformed
+</strong></pre>
+<h2><b>THANK YOU</h2>
+</center>
+</body></html>
+
+8. Write an HTML page that contains a selection box with a list of 5 countries, when the user 
+selects a country, its capital should be printed next to the list; Add CSS to customize the 
+properties of the font of the capital (color, bold and font size).
+<html>
+<head>
+<title>capitals of countries</title>
+<style>
+p{
+color:red;
+font-weight:bold;
+font-size:50;
+}
+</style>
+<script language="javascript">
+function capital()
+{
+var cunt=document.forms["frm1"].country.value; 
+var capital=" Please select any country ";
+if( cunt=="india")
+{
+capital="NEW DELHI";
+}
+if( cunt=="china")
+{
+capital="BEIJING";
+}
+if( cunt=="pakistan")
+{
+capital="ISLAMABAD";
+}
+if( cunt=="bangladesh")
+{
+capital="DHAKA";
+}
+if( cunt=="japan")
+{
+capital="TOKYO";
+}
+
+if( cunt=="select")
+{
+capital="Please select any country";
+}
+document.getElementById("capt").innerHTML=capital;
+}
+</script>
+</head>
+<body>
+<form name="frm1">
+<br/>
+<center>
+Select a Country : <select name="country" onchange="capital()">
+<option value="select">--SELECT--</option>
+<option value="india">INDIA</option>
+<option value="china">CHINA</option>
+<option value="pakistan">PAKISTAN</option>
+<option value="bangladesh">BANGLADESH</option>
+<option value="japan">JAPAN</option>
+</select>
+<br/>
+<br/>
+<font color="green" size="6">Capital is :</font> <p id="capt"></p>
+</center>
+</form>
+</body>
+</html> 
+
+8.Write a java script program to test the first character of a string is uppercase 
+or not. b. Write a pattern that matches e-mail addresses. c. Write a java 
+script function to print an integer with commas as thousands separators.
+
+a. 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check First Character</title>
+</head>
+<body>
+    <script>
+        function isFirstCharUpperCase(inputString) {
+            if (typeof inputString !== 'string' || inputString.length === 0) {
+                return false;
+            }
+
+            const firstChar = inputString.charAt(0);
+            return firstChar === firstChar.toUpperCase();
+        }
+
+        const userString = prompt("Enter a string:"); // Prompt the user for input
+
+        const result = isFirstCharUpperCase(userString);
+
+        if (result) {
+            document.write(`The first character of "${userString}" is uppercase.`);
+        } else {
+            document.write(`The first character of "${userString}" is not uppercase.`);
+        }
+    </script>
+</body>
+</html>
+
+b. 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Validation</title>
+</head>
+<body>
+    <h1>Email Validation</h1>
+    <p id="output"></p>
+
+    <script>
+        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+        const userEnteredEmail = prompt("Enter an email address:"); // Prompt the user for input
+
+        const isValidEmail = emailPattern.test(userEnteredEmail);
+
+        const outputElement = document.getElementById('output');
+        outputElement.innerHTML = `Is "${userEnteredEmail}" a valid email address? ${isValidEmail}`;
+    </script>
+</body>
+</html>
+
+9. A simple calculator web application that takes two numbers and an operator 
+(+, ,/,*and %) from an HTML page and returns the result page with the 
+operation performed on the operands. b. Write PHP program how to send 
+mail using PHP.
+a.
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <input type="number" id="num1" placeholder="Enter number 1">
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    <input type="number" id="num2" placeholder="Enter number 2">
+    <button onclick="calculate()">Calculate</button>
+    <p id="result">Result: </p>
+
+    <script>
+        function calculate() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            const operator = document.getElementById('operator').value;
+
+            let result;
+
+            if (isNaN(num1) || isNaN(num2)) {
+                result = 'Invalid input';
+            } else {
+                switch (operator) {
+                    case '+':
+                        result = num1 + num2;
+                        break;
+                    case '-':
+                        result = num1 - num2;
+                        break;
+                    case '*':
+                        result = num1 * num2;
+                        break;
+                    case '/':
+                        result = num1 / num2;
+                        break;
+                    case '%':
+                        result = num1 % num2;
+                        break;
+                    default:
+                        result = 'Invalid operator';
+                        break;
+                }
+            }
+
+            document.getElementById('result').textContent = `Result: ${result}`;
+        }
+    </script>
+</body>
+</html>
+
+b.
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $to = "recipient@example.com"; // Replace with the recipient's email address
+    $subject = "Test Email";
+    $message = "This is a test email sent from a PHP script.";
+    $headers = "From: sender@example.com"; // Replace with the sender's email address
+
+    if (mail($to, $subject, $message, $headers)) {
+        echo "Email sent successfully!";
+    } else {
+        echo "Email sending failed.";
+    }
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Send Email</title>
+</head>
+<body>
+    <h1>Send Email</h1>
+    <form method="post">
+        <input type="submit" value="Send Email">
+    </form>
+</body>
+</html>
+
