@@ -1,0 +1,214 @@
+LOGIN
+<html>
+	<head>
+		<title>login</title>
+	</head>
+	<body bgcolor="cyan">
+		<center>
+			<strong><h1> AMAZON </h1></strong>
+		</center>
+		<right>
+			<form action="./shopping.html">
+			  <label>Username:</label><br>
+			  <input type="text"><br>
+			  <label>Password:</label><br>
+			  <input type="password"><br><br>
+			  <input type="submit" value="Submit">
+			  <input type="reset" value="Reset">
+		</form>
+		<a href="reg.html">Click to Register</a>
+	</body>
+</html>
+
+HOMEPAGE
+<html>
+	<head>
+		<title>Amazon</title>
+	</head>
+	<body bgcolor="cyan">
+		<center>
+			<strong><h1>Welcome to AMAZON</h1></strong>
+			<form method="post" action="login.html" target=_blank>
+				<h4>for books</h4><input type="submit" value="Login/Register">
+			</form>
+		</center>
+	</body>
+</html>
+
+CATALOG
+<html>
+	<head>
+		<title>books catalog</title>
+	</head>
+	<body bgcolor="cyan">
+		<center><h1>AMAZON</h1></center>
+		<form method="post" action="shopping.html">
+			<img height=200px width=100px src="book1.jpg" alt="book1">
+			<img height=200px width=100px src="book2.jpg" alt="book2">
+			<img height=200px width=100px src="book1.jpg" alt="book3">
+			<img height=200px width=100px src="book2.jpg" alt="book4">
+			<img height=200px width=100px src="book1.jpg" alt="book5">
+			<img height=200px width=100px src="book2.jpg" alt="book6">
+			<img height=200px width=100px src="book1.jpg" alt="book7">
+			<img height=200px width=100px src="book2.jpg" alt="book8">
+			<img height=200px width=100px src="book1.jpg" alt="book9">
+			<img height=200px width=100px src="book2.jpg" alt="book10">
+			<img height=200px width=100px src="book1.jpg" alt="book11">
+			<img height=200px width=100px src="book2.jpg" alt="book12">
+			<center>
+				<b>for buy one of these books
+				<br>
+				</b><input type="submit" value="click here">
+			</center>
+		</form>
+	</body>
+</html>
+
+PAYMENT
+<html>
+	<head>
+		<title>payment</title>
+	</head>
+	<body bgcolor="cyan">
+		<center><h1>Payment By Credit Card</h1></center>
+		<form method=post action="orderconfirm.html">
+			<br><br><br><br><br>
+			<table align="center">
+				<tr>
+					<td><h4>Total Amount</h4></td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td><h4>Credit Card Number</td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" value=OK></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
+
+USER REGISTRATION
+<html>
+	<head>
+		<title>registration page</title>
+	</head>
+	<body bgcolor="cyan">
+		<center><strong><h1> AMAZON </h1></strong></center>
+			<form action="./catalog.html" >
+			  <label>Username:</label><br>
+			  <input type="text"><br>
+			  
+			  <label>Password:</label><br>
+			  <input type="password"><br>
+			  
+			  <label>Confirm Password:</label><br>
+			  <input type="password"><br>
+			  
+			  <label for="male">Male</label>
+			  <input type="radio" id="male" name="sex" value="M">
+			  
+			  <label for="female">Female</label>
+			  <input type="radio" id="female" name="sex" value="F">
+			  
+			  <label for="female">Rather not specify</label>
+			  <input type="radio" id="rns" name="sex" value="rns"><br/>
+		  	  
+		  	  <label>Address:</label>
+			  <textarea name="address" rows=5 cols=19></textarea><br><br>
+
+  			  <input type="submit" value="Submit">
+			  <input type="reset" value="Reset">
+		</form>
+</body>
+</html>
+
+ORDERCONFIRM
+<html>
+	<head>
+		<title>order conformation</title>
+	</head>
+	<body bgcolor="cyan">
+		<center>
+			<h1><b>BOOK SHOPPING</h1>
+			<pre><strong>
+			<b>Your order Is Conformed
+			</strong></pre>
+			<h2><b>THANK YOU</h2>
+		</center>
+	</body>
+</html>
+
+SHOPPING CART
+<html>
+	<head>
+		<title>shopping cart</title>
+	</head>
+	<body bgcolor="cyan">
+		<center>
+			<h1>Shopping Cart</h1>
+			<a href="userprofile.html">Click here to view profile</a>
+		</center>
+		<form align="center" method=post action="payment.html">
+			TextBooks <br/>
+			<select >
+				<optgroup label="select the book">
+					<option value="C&Ds">C&Ds
+					<option value="Ads">Ads
+					<option value="Java">Java
+					<option value="Oracle">Oracle
+					<option value="Ms SQL Server">Ms SQL Server
+					<option value="MySql">MySql
+				</optgroup>
+			</select><br/>
+			Quantity<br/>
+			<input type="text" id="q"><br>
+			<input type="submit" value="buy">
+		</form>
+		<center><pre>Cost of one book is"500" + shipping "100"</pre></center>
+	<body>
+</html>
+
+USER PROFILE
+<html>
+	<head>
+		<title>userprofile</title>
+	</head>
+	<body bgcolor="cyan">
+		<center>
+			<strong><h1>Welcome to AMAZON Online Book Store </h1></strong>
+		</center>
+		Edit your profile here...
+		<form method="post" action="catalog.html" >
+			<right>
+			<table align="left">
+				<tr>
+					<td><h4>Edit user name</td>
+					<td><input type="text" ></td>
+				</tr>
+				<tr>
+					<td><h4>Edit password</td>
+					<td><input type="password"></td>
+				</tr>
+				<tr>
+					<option>
+						<td><h4>male &nbsp;&nbsp;
+						<input type="radio" name="sex" id="male"></td>
+						<td><h4>female &nbsp; &nbsp;
+						<input type="radio" name="sex" id="female" ></td>
+					</option>
+				</tr>
+				<tr>
+					<td>Edit Address</td>
+					<td><textarea name="address" rows=5 cols=19></textarea></td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="submit" ></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

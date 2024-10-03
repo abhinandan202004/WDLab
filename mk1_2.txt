@@ -1,0 +1,204 @@
+1.<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initia
+l-scale=1.0">
+ <title>Class Time Table</title>
+ <style>
+ table {
+ width: 100%;
+ border-collapse: collapse;
+ margin: 20px 0;
+ font-size: 18px;
+ }
+ table, th, td {
+ border: 1px solid #ddd;
+ }
+ th, td {
+ padding: 12px;
+ text-align: center;
+ }
+ th {
+ background-color: #4CAF50;
+ color: white;
+ }
+ tr:nth-child(even) {
+background-color: #f2f2f2;
+ }
+ </style>
+</head>
+<body>
+<h2>Class Time Table</h2>
+<table>
+ <tr>
+ <th>Day/Time</th>
+ <th>9:00 AM - 10:00 AM</th>
+ <th>10:00 AM - 11:00 AM</th>
+ <th>11:00 AM - 12:00 PM</th>
+ <th>12:00 PM - 1:00 PM</th>
+ <th>1:00 PM - 2:00 PM</th>
+ <th>2:00 PM - 3:00 PM</th>
+ </tr>
+ <tr>
+ <td>Monday</td>
+ <td>Math</td>
+ <td>Science</td>
+ <td>History</td>
+ <td>Lunch Break</td>
+ <td>PE</td>
+ <td>English</td>
+ </tr>
+ <tr>
+ <td>Tuesday</td>
+ <td>English</td>
+ <td>Math</td>
+ <td>Science</td>
+ <td>Lunch Break</td>
+ <td>History</td>
+ <td>PE</td>
+ </tr>
+<tr>
+ <td>Wednesday</td>
+ <td>Science</td>
+ <td>English</td>
+ <td>Math</td>
+ <td>Lunch Break</td>
+ <td>PE</td>
+ <td>History</td>
+ </tr>
+ <tr>
+ <td>Thursday</td>
+ <td>Math</td>
+ <td>PE</td>
+ <td>History</td>
+ <td>Lunch Break</td>
+ <td>Science</td>
+ <td>English</td>
+ </tr>
+ <tr>
+ <td>Friday</td>
+ <td>History</td>
+ <td>Math</td>
+ <td>English</td>
+ <td>Lunch Break</td>
+ <td>Science</td>
+ <td>PE</td>
+ </tr>
+</table>
+</body>
+</html>
+
+
+2.<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initia
+l-scale=1.0" />
+ <title>UVCE, Bengaluru - Infrastructure</title>
+ <style>
+ table {
+ width: 100%;
+ border-collapse: collapse;
+ margin: 20px 0;
+ }
+ th, td {
+ border: 1px solid #ddd;
+ padding: 8px;
+ text-align: left;
+ }
+ th {
+ background-color: #f2f2f2;
+ }
+ h2 {
+ text-align: center;
+ margin-top: 20px;
+ }
+ </style>
+ </head>
+<body>
+ <h1>University Visvesvaraya College of Engineering (UVC
+E), Bengaluru</h1>
+ <h2>Infrastructure Overview</h2>
+ <table>
+ <tr>
+ <th>Building</th>
+ <th>Details</th>
+ </tr>
+ <tr>
+ <td>Main Block</td>
+ <td>Houses administrative offices, library, and lectu
+re halls.</td>
+ </tr>
+ <tr>
+ <td>Computer Science Block</td>
+ <td>Equipped with modern labs, classrooms, and facult
+y offices.</td>
+ </tr>
+ <tr>
+ <td>Mechanical Block</td>
+ <td>
+ Includes workshops, labs, and lecture rooms for mec
+hanical engineering
+ students.
+ </td>
+ </tr>
+ <tr>
+ <td>Electrical Block</td>
+ <td>Contains electrical labs, classrooms, and faculty
+offices.</td>
+ </tr>
+ <tr>
+ <td>Hostel Facilities</td>
+ <td>
+Separate hostels for boys and girls with mess and r
+ecreational
+ facilities.
+ </td>
+ </tr>
+ <tr>
+ <td>Sports Complex</td>
+ <td>Includes a gymnasium, basketball courts, and a cr
+icket field.</td>
+ </tr>
+ <tr>
+ <td>Auditorium</td>
+ <td>Large auditorium used for events, seminars, and c
+onferences.</td>
+ </tr>
+ <tr>
+ <td>Library</td>
+ <td>A vast collection of books, journals, and digital
+resources.</td>
+ </tr>
+ </table>
+ <h2>Additional Facilities</h2>
+ <table>
+ <tr>
+ <th>Facility</th>
+ <th>Details</th>
+ </tr>
+ <tr>
+ <td>Wi-Fi Campus</td>
+ <td>High-speed internet access available throughout t
+he campus.</td>
+ </tr>
+ <tr>
+ <td>Canteen</td>
+<td>Serves a variety of meals and snacks at affordabl
+e prices.</td>
+ </tr>
+ <tr>
+ <td>Parking</td>
+ <td>Ample parking space for students, faculty, and vi
+sitors.</td>
+ </tr>
+ <tr>
+ <td>Medical Center</td>
+ <td>Provides basic medical facilities and first aid s
+ervices.</td>
+ </tr>
+ </table>
+ </body>
+</html>

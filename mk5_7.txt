@@ -1,0 +1,53 @@
+5.<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<h2>Click play button to play audio</h2>
+<audio src="./audio1.mp3" controls></audio>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<h2>Click play button to play audio</h2>
+<video src="./video1.mp4" controls></video>
+</body>
+</html>
+
+
+7.<html>
+<head>
+<style> 
+input {
+  font-weight: 400;
+  color: blue;
+  font-size: 30px;
+}
+</style>
+</head
+<body>
+    Select a country :
+    <select id="countries" onchange=getCapital()>
+        <option value="0">Australia</option>
+        <option value="1">Poland</option>
+        <option value="2">Mexico</option>
+        <option value="3">Germany</option>
+        <option value="4">India</option>
+    </select>
+    <br/><br/>
+    Capital: <input type="text" id="txtbox">
+    <script>
+        function getCapital() {
+            var capitals=["Canberra","Warsaw","Mexico City","Berlin","New Delhi"];
+            var i = document.getElementById("countries").selectedOptions[0].value;
+            document.getElementById("txtbox").value = capitals[i];
+        }
+    </script>
+</body>
+</html>

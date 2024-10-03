@@ -1,0 +1,159 @@
+8.a
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>JavaScript Regular expression to check string's first character is uppercase or not</title>
+<script>
+function upper_case(str) {
+  regexp=/^[A-Z]/;
+  if (regexp.test(str)) {
+    alert("String's first character is uppercasea");
+  } else {
+    alert("String's first character is not uppercase");
+  }
+}
+upper_case('AB');
+upper_case('Abcde');
+upper_case('AEcd');
+upper_case('AbcdEF');
+</script>
+</head>
+<body>
+</body>
+</html>
+
+
+8.b
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>JavaScript Email Validation</title>
+	<script>
+	function ValidateEmail(input) {
+		var validRegex = "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
+		if (input.value.match(validRegex)) {
+			alert("Valid email address!");
+			document.form1.text1.focus();
+			return true;
+		}
+		else {
+			alert("Invalid email address!");
+			document.form1.text1.focus();
+			return false;
+		}
+	}
+	</script>
+	</head>
+  <body onload="document.form1.text1.focus()">
+	<div>
+		<h2>Input an email address</h2>
+		<form name="form1" action="#">
+			<input type="text" name="text1" />
+			<input type="submit" name="validate" value="Validate" onclick="ValidateEmail(document.form1.text1)"/>
+		</form>
+	</div>
+</body>
+</html>
+
+8.c
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to print an integer with commas as thousands separators</title>
+  
+</head>
+<body>
+	<div>
+	<h2>java script function to print an integer with commas as thousand separators</h2>
+	</div>
+	<script>
+	function thousands_separators(num){
+		var num_parts = num.toString().split(".");
+		num_parts[0] = num_parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		return num_parts.join(".");
+	}
+
+	document.write(thousands_separators(12345678.23));
+	</script>
+</body>
+</html>
+
+
+
+9.a
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <script>
+    function calculate() {
+      var num1 = parseFloat(document.getElementById("num1").value);
+      var num2 = parseFloat(document.getElementById("num2").value);
+      var operator = document.getElementById("operator").value;
+      var result;
+
+      if (isNaN(num1) || isNaN(num2)) {
+        alert("Please enter valid numbers.");
+        return;
+      }
+
+      switch (operator) {
+        case "+":
+          result = num1 + num2;
+          break;
+        case "-":
+          result = num1 - num2;
+          break;
+        case "*":
+          result = num1 * num2;
+          break;
+        case "/":
+          if (num2 === 0) {
+            alert("Cannot divide by zero.");
+            return;
+          }
+          result = num1 / num2;
+          break;
+        default:
+          alert("Please select a valid operator.");
+          return;
+      }
+
+      document.getElementById("result").textContent = "Result: " + result;
+    }
+  </script>
+</head>
+<body>
+  <h2>Simple Calculator</h2>
+  <input type="text" id="num1" placeholder="First Number">
+  <select id="operator">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+  </select>
+  <input type="text" id="num2" placeholder="Second Number">
+  <button onclick="calculate()">Calculate</button>
+  <h3 id="result"></h3>
+</body>
+</html>
+
+9.b<?php
+// Email configuration
+$to = "recipient@example.com";        // Recipient's email
+$subject = "Test Email from PHP";     // Email subject
+$message = "Hello! This is a simple test email sent from a PHP script.";  // Email body
+$headers = "From: sender@example.com";  // Sender's email
+
+// Attempt to send email and output result
+if (mail($to, $subject, $message, $headers)) {
+    echo "Email successfully sent to $to";  // Success message
+} else {
+    echo "Failed to send email.";  // Error message
+}
+?>
